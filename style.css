@@ -1,0 +1,55 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
+}
+.header{
+    grid-area: 1 / 2 / 2 / end;
+    box-shadow: inset;
+}
+.dashboard{
+    grid-area: 1 / 1 / end / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 300px 200px;
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(25, 146, 212);
+    color: white;
+    font-size: 2rem;
+    
+}
+.dashboard > div{
+    margin-top: 10%;
+    font-size: 3rem;
+}
+.first{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+.first + ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+li{
+    list-style: none;
+}
+.content{
+    background-color: rgb(226, 232, 240);
+    grid-area: 2 / 2 / end / end;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.Projects{
+    grid-area: 1 / 1 / end / 2;
+}
+.Announcements{
+    grid-area: 1 / 2 / 2 / end;
+}
+.Trending{
+    grid-area: 2 / 2 / end / end
+}
